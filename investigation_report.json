@@ -1,0 +1,137 @@
+{
+    "firewall": {
+        "valid_events": 894,
+        "allowed": 523,
+        "blocked": 371,
+        "unique_source_ips": 203,
+        "top_blocked_ips": [
+            [
+                "203.0.113.55",
+                78
+            ],
+            [
+                "203.0.113.77",
+                23
+            ],
+            [
+                "198.51.100.77",
+                22
+            ],
+            [
+                "203.0.113.90",
+                20
+            ],
+            [
+                "192.168.1.34",
+                5
+            ]
+        ],
+        "top_blocked_ports": [
+            [
+                22,
+                81
+            ],
+            [
+                443,
+                39
+            ],
+            [
+                8080,
+                35
+            ],
+            [
+                80,
+                32
+            ],
+            [
+                53,
+                31
+            ]
+        ]
+    },
+    "authentication": {
+        "valid_events": 516,
+        "successful_logins": 313,
+        "failed_logins": 165,
+        "account_locked": 5,
+        "logouts": 33,
+        "top_failed_ips": [
+            [
+                "198.51.100.23",
+                46
+            ],
+            [
+                "203.0.113.55",
+                20
+            ],
+            [
+                "203.0.113.77",
+                17
+            ],
+            [
+                "192.168.1.20",
+                4
+            ],
+            [
+                "192.168.1.30",
+                3
+            ]
+        ],
+        "top_failed_users": [
+            [
+                "admin",
+                53
+            ],
+            [
+                "svc_backup",
+                28
+            ],
+            [
+                "root",
+                15
+            ],
+            [
+                "bob",
+                14
+            ],
+            [
+                "carol",
+                14
+            ]
+        ]
+    },
+    "suspicious_ip_correlation": {
+        "192.0.2.44": {
+            "blocked_events": 0,
+            "failed_logins": 0
+        },
+        "198.51.100.18": {
+            "blocked_events": 1,
+            "failed_logins": 0
+        },
+        "198.51.100.23": {
+            "blocked_events": 1,
+            "failed_logins": 46
+        },
+        "198.51.100.77": {
+            "blocked_events": 22,
+            "failed_logins": 0
+        },
+        "203.0.113.12": {
+            "blocked_events": 0,
+            "failed_logins": 0
+        },
+        "203.0.113.55": {
+            "blocked_events": 78,
+            "failed_logins": 20
+        },
+        "203.0.113.77": {
+            "blocked_events": 23,
+            "failed_logins": 17
+        },
+        "203.0.113.90": {
+            "blocked_events": 20,
+            "failed_logins": 0
+        }
+    }
+}

@@ -1,0 +1,67 @@
+SECURITY LOG INVESTIGATION REPORT
+========================================
+
+FIREWALL ANALYSIS
+-------------------------
+Valid events: 894
+Allowed events: 523
+Blocked events: 371
+Unique source IPs: 203
+
+Top blocked source IPs:
+203.0.113.55 - 78 blocked events
+203.0.113.77 - 23 blocked events
+198.51.100.77 - 22 blocked events
+203.0.113.90 - 20 blocked events
+192.168.1.34 - 5 blocked events
+
+Most targeted blocked ports:
+Port 22 - 81 events
+Port 443 - 39 events
+Port 8080 - 35 events
+Port 80 - 32 events
+Port 53 - 31 events
+
+AUTHENTICATION ANALYSIS
+-------------------------
+Valid events: 516
+Successful logins: 313
+Failed logins: 165
+Account locked events: 5
+Logouts: 33
+
+Top failed-login source IPs:
+198.51.100.23 - 46 failed logins
+203.0.113.55 - 20 failed logins
+203.0.113.77 - 17 failed logins
+192.168.1.20 - 4 failed logins
+192.168.1.30 - 3 failed logins
+
+Most targeted usernames:
+admin - 53 failed logins
+svc_backup - 28 failed logins
+root - 15 failed logins
+bob - 14 failed logins
+carol - 14 failed logins
+
+DATA QUALITY
+-------------------------
+Malformed firewall lines: 6
+Malformed authentication lines: 4
+
+SECURITY OBSERVATIONS
+-------------------------
+Allowed firewall events were equal to or higher than blocked events.
+Successful logins were equal to or higher than failed logins.
+The most frequent failed-login source was 198.51.100.23 with 46 attempts.
+
+SUSPICIOUS IP CORRELATION
+-------------------------
+192.0.2.44 - Blocked events: 0, Failed logins: 0
+198.51.100.18 - Blocked events: 1, Failed logins: 0
+198.51.100.23 - Blocked events: 1, Failed logins: 46
+198.51.100.77 - Blocked events: 22, Failed logins: 0
+203.0.113.12 - Blocked events: 0, Failed logins: 0
+203.0.113.55 - Blocked events: 78, Failed logins: 20
+203.0.113.77 - Blocked events: 23, Failed logins: 17
+203.0.113.90 - Blocked events: 20, Failed logins: 0
